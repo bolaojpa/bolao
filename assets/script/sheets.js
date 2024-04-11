@@ -46,4 +46,4 @@ async function loadSheetData() {
 }
 
 // Chama a função para carregar os dados da planilha quando a página é carregada
-window.onload = loadSheetData;
+loadSheetData();
