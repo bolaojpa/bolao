@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/bdcd1478e3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+
+     <!-- Popup -->
+     <div id="popup" class="popup">
+        <div class="popup-content">
+            <img class="lider-banner" src="./assets/img/Banner Euro 2024.png" alt="Popup de boas-vindas">
+
+            <div class="lider">
+                <img class="foto-lider" id="fotoParticipante" src="" alt="Foto do Participante">
+                <div class="participante">
+                    <div id="nomeParticipante"></div>
+                </div>
+            </div>
+
+            <button id="closeBtn" class="close" style="display: none;"><i class="fa-solid fa-circle-xmark fechar"></i></button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+    <!-- Topo da página -->
+    <nav id="topo" class="navbar navbar-expand-lg navbar-light">
+        <img class="logo-topo" src="assets/img/euro2024 logo completo horizontal.svg" alt="logo do topo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="classificacao.html">Classificação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Competições</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="regras.html">Regras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="banners">
+        <div class="titulo">
+            <h1>COMPETIÇÕES</h1>
+        </div>
+
+        <div class="container mt-4 mb-4 banners">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#">
+                        <div class="banner">
+                            <img src="https://static.wixstatic.com/media/d64bbb_3629e89189574b8eb12dbeafbcc4bf05~mv2.png/v1/crop/x_0,y_4,w_3559,h_444/fill/w_850,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Banner%202022.png"
+                                alt="Banner 1">
+                            <img class="overlay" src="./assets/img/euro2024 logo branco.svg" alt="Overlay 1">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner">
+                            <img src="https://static.wixstatic.com/media/d64bbb_3629e89189574b8eb12dbeafbcc4bf05~mv2.png/v1/crop/x_0,y_4,w_3559,h_444/fill/w_850,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Banner%202022.png"
+                                alt="Banner 2">
+                            <img class="overlay" src="./assets/img/euro2024 logo branco.svg" alt="Overlay 2">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner">
+                            <img src="https://static.wixstatic.com/media/d64bbb_3629e89189574b8eb12dbeafbcc4bf05~mv2.png/v1/crop/x_0,y_4,w_3559,h_444/fill/w_850,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Banner%202022.png"
+                                alt="Banner 3">
+                            <img class="overlay" src="./assets/img/euro2024 logo branco.svg" alt="Overlay 3">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner">
+                            <img src="https://static.wixstatic.com/media/d64bbb_3629e89189574b8eb12dbeafbcc4bf05~mv2.png/v1/crop/x_0,y_4,w_3559,h_444/fill/w_850,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Banner%202022.png"
+                                alt="Banner 4">
+                            <img class="overlay" src="./assets/img/euro2024 logo branco.svg" alt="Overlay 4">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="banner">
+                            <img src="https://static.wixstatic.com/media/d64bbb_3629e89189574b8eb12dbeafbcc4bf05~mv2.png/v1/crop/x_0,y_4,w_3559,h_444/fill/w_850,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Banner%202022.png"
+                                alt="Banner 5">
+                            <img class="overlay" src="./assets/img/euro2024 logo branco.svg" alt="Overlay 5">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer mt-4">
+        <div class="container">
+            <div class="row copyright">
+                <div class=" text-left">
+                    <p>Copyright © 2024 - Bolaojpa</p>
+                </div>
+                <div class=" text-right">
+                    <img class="logo-footer" src="./assets/img/euro2024 logo branco.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante de rolagem -->
+    <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao topo"><i
+            class="fa-solid fa-caret-up topo"></i></button>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./assets/script/script.js"></script>
+    <script src="./assets/script/btn.js"></script>
+    <script src="./assets/script/popup.js"></script>
+    <script src="./assets/script/cookies.js"></script>
+    <script src="./assets/script/banners.js"></script>
+    <script src="./assets/script/sheets.js"></script>
+</body>
+
+</html>

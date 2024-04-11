@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/bdcd1478e3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img class="lider-banner" src="./assets/img/Banner Euro 2024.png" alt="Popup de boas-vindas">
+
+            <div class="lider">
+                <img class="foto-lider" id="fotoParticipante" src="" alt="Foto do Participante">
+                <div class="participante">
+                    <div id="nomeParticipante"></div>
+                </div>
+            </div>
+
+            <button id="closeBtn" class="close" style="display: none;"><i class="fa-solid fa-circle-xmark fechar"></i></button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+    <!-- Topo da página -->
+    <nav id="topo" class="navbar navbar-expand-lg navbar-light">
+        <img class="logo-topo" src="assets/img/euro2024 logo completo horizontal.svg" alt="logo do topo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="classificacao.html">Classificação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="competicoes.html">Competições</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="regras.html">Regras</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Espaço para Ranking -->
+    <div class="ranking">
+        <div class="ranking-title">
+            <h2>Ranking</h2>
+        </div>
+
+        <div class="participants-container">
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <span class="participant"></span>
+            <!-- <span class="participant">Participante 10</span> -->
+        </div>
+    </div>
+
+
+
+    <!-- Conteúdo principal -->
+    <main class="container mt-4">
+        <div class="planilha titulo">
+            <div class="titulo">
+                <h1>TABELA GERAL</h1>
+            </div>
+            <!-- <img src="https://static.wixstatic.com/media/d64bbb_84a428a978d149bf8190007c80773b1d~mv2.png/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d64bbb_84a428a978d149bf8190007c80773b1d~mv2.png" alt="" style="width:600px;height:600px;object-fit:cover" width="600" height="600" srcset="https://static.wixstatic.com/media/d64bbb_84a428a978d149bf8190007c80773b1d~mv2.png/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d64bbb_84a428a978d149bf8190007c80773b1d~mv2.png" fetchpriority="high"> -->
+            <!-- Google planilha incorporada -->
+            <iframe scrolling="no"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS3E8aeLw2b5CwqeWEvyHx6wNDmquA-UklsbcQt8xnM7Drph5iuP93nFaQ4V8ORjrChUMZKpLEXs4_n/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;gridlines=false&amp;chrome=false"
+                frameborder="0"></iframe>
+        </div>
+    </main>
+
+    <!-- Seção com cards -->
+    <section class="container mt-4 mb-4 cards">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Regras</h5>
+                        <p class="card-text">Neste tópico encontram-se as regras detalhadas do bolão, valores, critérios
+                            de desempate, pontuação geral, situação da partida, prorrogação, escolha das opções de
+                            seleções, prazos, entre outros assuntos são abordados no tópico.</p>
+                        <a href="">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hall da Fama</h5>
+                        <p class="card-text">Este tópico é cobiçado por muitos mas frequentados por poucos, aqui se
+                            encontram os verdadeiros campeões, participantes dos bolões que ganharam algum
+                            prêmio estão carimbados no nosso Hall da Fama e sempre será lembrado.</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Competições</h5>
+                        <p class="card-text">Neste tópico está registrado todos os placares dos participantes a partir
+                            do bolão de 2012, então, se você participou de algum bolão fique atento que você poderá
+                            consultar seu histórico e lembrar dos momentos nostálgicos.</p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer mt-4">
+
+        <div class="row copyright">
+            <div class="col-md-6">
+                <p>Copyright © 2024 - Bolaojpa</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <img class="logo-footer" src="./assets/img/euro2024 logo branco.svg" alt="">
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante de rolagem -->
+    <button onclick="scrollToTop()" id="btnScrollToTop" title="Voltar ao topo"><i
+            class="fa-solid fa-caret-up topo"></i></button>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./assets/script/script.js"></script>
+    <script src="./assets/script/btn.js"></script>
+    <script src="./assets/script/popup.js"></script>
+    <script src="./assets/script/cookies.js"></script>
+    <script src="./assets/script/banners.js"></script>
+    <script src="./assets/script/sheets.js"></script>
+    <script src="./assets/script/participantes.js"></script>
+</body>
+
+</html>
