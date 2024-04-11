@@ -16,7 +16,7 @@ function checkVisit() {
   console.log("Verificando visita...");
 
   // Verifica se é a primeira visita ou se já se passaram mais de 5 minutos desde a última visita
-  if (!lastVisit || (currentTime - parseInt(lastVisit)) > (0 * 60 * 1000)) {
+  if (!lastVisit || (currentTime - parseInt(lastVisit)) > (5 * 60 * 1000)) {
     // Exibe o popup e o overlay
     document.getElementById("popup").style.display = "block";
     showOverlay();
