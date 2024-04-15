@@ -173,7 +173,8 @@ iframe {
     position: absolute;
     display: flex;
     justify-content: center;
-    flex-direction: column-reverse; /*REVISAR ISSO*/
+    flex-direction: column-reverse;
+    /*REVISAR ISSO*/
     /* height: 140px; */
     /* margin-bottom: 30px; */
     z-index: 990;
@@ -196,7 +197,7 @@ iframe {
 
 /*REVISAR ISSO*/
 #nomeParticipante {
-    font-size: 35px ;
+    font-size: 35px;
     background: white;
     padding: 10px;
     width: 100%;
@@ -240,7 +241,7 @@ iframe {
     #nomeParticipante {
         font-size: 20px;
     }
-  }
+}
 
 .topo {
     color: rgb(255, 255, 255);
@@ -278,14 +279,19 @@ p {
 .ranking {
     background-color: orange;
     padding: 10px;
-    overflow: hidden; /* Oculta os participantes que estiverem fora da área visível */
-    position: relative; /* Define a posição relativa para o posicionamento absoluto do título */
-    display: flex; /* Usando flexbox para alinhar o título e os participantes */
-    align-items: center; /* Alinhando verticalmente */
+    overflow: hidden;
+    /* Oculta os participantes que estiverem fora da área visível */
+    position: relative;
+    /* Define a posição relativa para o posicionamento absoluto do título */
+    display: flex;
+    /* Usando flexbox para alinhar o título e os participantes */
+    align-items: center;
+    /* Alinhando verticalmente */
 }
 
 .ranking-title {
-    margin-right: auto; /* Move para a esquerda o máximo possível */
+    margin-right: auto;
+    /* Move para a esquerda o máximo possível */
     margin-left: -10px;
     margin-bottom: 0;
     width: 160px;
@@ -299,8 +305,16 @@ p {
 
 /* Define a animação */
 @keyframes moveParticipants {
-    0% { transform: translateX(150%); } /* Inicia os participantes fora do contêiner */
-    100% { transform: translateX(calc(-100% - 100px)); } /* Move os participantes até a palavra "Ranking" */
+    0% {
+        transform: translateX(150%);
+    }
+
+    /* Inicia os participantes fora do contêiner */
+    100% {
+        transform: translateX(calc(-100% - 100px));
+    }
+
+    /* Move os participantes até a palavra "Ranking" */
 }
 
 /* Aplica a animação aos participantes */
@@ -309,9 +323,12 @@ p {
     justify-content: space-around;
     overflow: hidden;
     position: relative;
-    width: calc(100% - 180px); /* Largura do contêiner (menos a largura do título) */
-    animation: moveParticipants 35s linear infinite; /* Aplica a animação */
-    /* animation-delay: 10s;  *//* Adiciona um atraso para iniciar a animação */
+    width: calc(100% - 180px);
+    /* Largura do contêiner (menos a largura do título) */
+    animation: moveParticipants 35s linear infinite;
+    /* Aplica a animação */
+    /* animation-delay: 10s;  */
+    /* Adiciona um atraso para iniciar a animação */
 }
 
 .participant {
@@ -319,7 +336,7 @@ p {
     font-size: 16px !important;
     color: white;
     font-weight: bold;
-   
+
 }
 
 /* Ocultar os participantes que passarem do título "RANKING" */
@@ -330,8 +347,10 @@ p {
     right: 0;
     height: 100%;
     background: linear-gradient(to right, orange 50%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1; /* Garante que a cobertura esteja acima dos participantes */
-    transition: width 0.5s ease; /* Transição suave da largura */
+    z-index: 1;
+    /* Garante que a cobertura esteja acima dos participantes */
+    transition: width 0.5s ease;
+    /* Transição suave da largura */
 }
 
 
@@ -363,7 +382,8 @@ p {
     transform: translate(-50%, -50%);
     opacity: 1;
     transition: opacity 0.5s ease;
-    height: 106px; /* Define a altura */
+    height: 106px;
+    /* Define a altura */
 }
 
 .banner:hover .overlay {
@@ -396,6 +416,7 @@ p {
         opacity: 0;
         transform: translateX(-100%);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -413,3 +434,46 @@ p {
 .paragrafo-bloco {
     text-align: justify;
 }
+
+/*CAROUSEL*/
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 33.33%; /* Ajuste para exibir até 3 slides por vez */
+  }
+  
+  .slide img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura da slide */
+    height: auto; /* Mantém a proporção da imagem */
+    cursor: pointer;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 0;
+  }
+  
+  .carousel-next {
+    right: 0;
+  }
+  
