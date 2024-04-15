@@ -1,44 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const modalImage = document.getElementById('modalImage');
-    const modal = document.getElementById('myModal');
+$(document).ready(function() {
+    // Captura todos os elementos com a classe "img-thumbnail"
+    var images = document.getElementsByClassName('img-thumbnail');
     
-    // Função para redimensionar a imagem proporcionalmente
-    function resizeImageToFitViewport(image, maxHeight) {
-        const aspectRatio = image.width / image.height;
-        const maxImageHeight = maxHeight * 0.8; // 80% da altura da janela
-    
-        // Ajusta a altura da imagem para 80% da altura da janela
-        if (image.height > maxImageHeight) {
-            image.height = maxImageHeight;
-            image.width = maxImageHeight * aspectRatio;
-        }
+    // Adiciona um event listener para cada imagem
+    for (var i = 0; i < images.length; i++) {
+      images[i].addEventListener('click', function() {
+        // Exibe o modal
+        $('#myModal').css('display', 'block');
+        
+        // Define o atributo src da imagem no modal para a imagem clicada
+        $('#modalImage').attr('src', this.src);
+      });
     }
-    
-    // Adiciona um evento de clique a cada imagem na galeria
-    const images = document.querySelectorAll('.gallery-image');
-    images.forEach(function(image) {
-        image.addEventListener('click', function() {
-            modal.style.display = "block";
-            modalImage.src = this.src;
-            resizeImageToFitViewport(modalImage, window.innerHeight);
-        });
+  
+    // Fecha o modal quando clicar no botão de fechar (X)
+    $('.close').click(function() {
+      $('#myModal').css('display', 'none');
     });
-    
-    // Fecha o modal quando o usuário clica no botão Fechar
-    const closeModalBtn = document.querySelector('.close');
-    closeModalBtn.addEventListener('click', function() {
-        modal.style.display = "none";
+  
+    // Fecha o modal quando clicar fora da imagem
+    $(window).click(function(event) {
+      if (event.target == $('#myModal')[0]) {
+        $('#myModal').css('display', 'none');
+      }
     });
-    
-    // Fecha o modal quando o usuário clica fora da imagem
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
-    
-    // Redimensiona a imagem quando a janela é redimensionada
-    window.addEventListener('resize', function() {
-        resizeImageToFitViewport(modalImage, window.innerHeight);
-    });
-});
+  });
+  
