@@ -437,43 +437,73 @@ p {
 
 /*CAROUSEL*/
 
-.carousel {
-    position: relative;
+.image-block {
     width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide {
-    flex: 0 0 33.33%; /* Ajuste para exibir até 3 slides por vez */
-  }
-  
-  .slide img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura da slide */
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;
     cursor: pointer;
-  }
-  
-  .carousel-prev,
-  .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    cursor: pointer;
-  }
-  
-  .carousel-prev {
+    display: block;
+    margin: 0 auto; /* Alinha as imagens ao centro */
+}
+
+@media (min-width: 576px) {
+    .image-block {
+        width: calc(110% - 20px); /* 2 imagens por linha */
+        margin: 0 auto 20px; /* Alinha ao centro e adiciona espaço inferior */
+    }
+
+    .image-block:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .image-block {
+        width: calc(110% - 20px); /* 3 imagens por linha */
+        margin: 0 auto 20px; /* Alinha ao centro e adiciona espaço inferior */
+    }
+
+    .image-block:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .image-block {
+        width: calc(110% - 20px); /* 4 imagens por linha */
+        margin: 0 auto 20px; /* Alinha ao centro e adiciona espaço inferior */
+    }
+
+    .image-block:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+
+/* Estilos para o modal */
+.modal-container {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Posição fixa para ocupar toda a tela */
+    z-index: 9999; /* Z-index alto para ficar na frente de outros elementos */
     left: 0;
-  }
-  
-  .carousel-next {
-    right: 0;
-  }
-  
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adiciona rolagem se a imagem for maior que a tela */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto transparente */
+}
+
+.modal-content {
+    display: block;
+    margin: auto; /* Centraliza a imagem vertical e horizontalmente */
+    max-width: 80%; /* 80% da largura da tela */
+    max-height: 80%; /* 80% da altura da tela */
+    height: auto; /* Altura automática para manter a proporção da imagem */
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}

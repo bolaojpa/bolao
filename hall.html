@@ -64,14 +64,54 @@
         </div>
     </nav>
 
-    <section class="container banners">
+    <section class="banners">
         <div class="titulo">
             <h1>HALL DA FAMA</h1>
         </div>
 
-        <div class="carousel">
+        <div class="container">
+            <div class="row" id="imageContainer">
+                <!-- Aqui vão as imagens -->
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_copa_2022.png" alt="Imagem 1" class="img-fluid image-block">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_euro_2021.png" alt="Imagem 2" class="img-fluid image-block">
+                </div>
+                <!-- Adicione mais divs com imagens -->
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_america_2019.png" alt="Imagem 2" class="img-fluid image-block">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_copa_2018.png" alt="Imagem 2" class="img-fluid image-block">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_euro_2016.png" alt="Imagem 2" class="img-fluid image-block">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_copa_2014.png" alt="Imagem 2" class="img-fluid image-block">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_euro_2012.png" alt="Imagem 2" class="img-fluid image-block">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_copa_2010.png" alt="Imagem 2" class="img-fluid image-block">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_euro_2008.png" alt="Imagem 2" class="img-fluid image-block">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <img src="./assets/img/hall_copa_2006.png" alt="Imagem 2" class="img-fluid image-block">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- <div class="carousel">
             <div class="carousel-inner">
-                <!-- Adicione mais divs .slide com outras imagens -->
+                
                 <div class="slide">
                     <img src="./assets/img/hall_copa_2006.png" alt="Imagem 1">
                 </div>
@@ -108,6 +148,13 @@
   <button class="carousel-next">Próximo</button>
         </div>
 
+ -->
+
+ <!-- Adicione um elemento de modal -->
+ <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
 
     </section>
 
@@ -141,6 +188,7 @@
     <script src="./assets/script/banners.js"></script>
     <script src="./assets/script/sheets.js"></script>
     <script src="./assets/script/carousel.js"></script>
+    <script src="./assets/script/modal.js"></script>
 </body>
 
 </html>
