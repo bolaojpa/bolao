@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Uefa Euro Bold';
+    src: url('/assets/fonts/UEFAEuro-Bold/UEFAEuro-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Uefa Euro Book;
+    src: url('/assets/fonts/UEFAEuro-Book/UEFAEuro-Book.ttf') format('truetype');
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Uefa Euro Book', Arial, sans-serif;
+}
+
+#dynamicMenu {
+    background-image: url("../img/euro2024\ logo\ completo\ horizontal.svg");
+    /* Caminho para a imagem */
+    background-size: auto 60px;
+    /* Ajusta o tamanho da imagem */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    background-position: 10px center;
+    /* Posiciona a imagem à esquerda */
+    padding: 10px;
+    /* Adiciona espaço ao redor do conteudo */
+    display: flex;
+    justify-content: end;
+    z-index: 3;
+    height: 70px;
+}
+
+.sheets {
+    height: 170vh; /*235vh total*/
+}
+
+.bg-cards {
+    background: #00ba5d;
+    color: white;
+}
+
+.card-title {
+    font-family: 'Uefa Euro Bold', Arial, sans-serif;
+    text-align: center;
+}
+
+
+.bg-primary {
+    background-color: #143cdb !important;
+}
+
+.btn-primary {
+    background: #143cdb !important;
+    color: white;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background: #f9bf4b !important;
+    color: #143cdb;
+}
+
+.cards {
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    border: 0px;
+    width: 10rem;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 1260px) {
+    .card {
+        width: 25rem;
+    }
+}
+
+@media only screen and (min-width: 875px) and (max-width: 1259px) {
+    .card {
+        width: 16rem;
+    }
+/*     .sheets {
+        height: 200vh;
+    } */
+}
+
+@media only screen and (min-width: 575px) and (max-width: 875px) {
+    .card {
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    .card {
+        width: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Estilo para o footer */
+.footer {
+    background-color: #143cdb;
+    /* Cor de fundo */
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para o texto do footer */
+.footer-text {
+    display: block;
+    color: white;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinhamento central */
+    padding: 10px;
+    /* Espaçamento interno */
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'UEFA Euro 2024 custom';
+    src: local('UEFA Euro 2024 custom Bold'), local('UEFA-Euro-2024-custom-Bold'),
+        url('UEFAEuro-Bold.woff2') format('woff2'),
+        url('UEFAEuro-Bold.woff') format('woff'),
+        url('UEFAEuro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
