@@ -10,102 +10,40 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/bdcd1478e3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
 
     <link rel="stylesheet" href="./assets/css/style.css" class="css">
-    <link rel="stylesheet" href="./assets/css/carousel.css" class="css">
-    
+    <link rel="stylesheet" href="./assets/css/carousel.css">
 </head>
 
 <body>
 
     <section class="container carrousel my-5">
         <h1 class="titulo-pagina animate__animated animate__fadeInDown">ESTATÍSTICAS</h1>
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!-- Aqui vão os slides do carrossel -->
                 <div class="carousel-item active">
-                    <img src="./assets/img/hall/hall2022.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
+                    <img src="./assets/img/hall/hall2022.png" class="d-block w-100" alt="Slide 1">
                 </div>
-                <!-- Adicione mais itens do carrossel conforme necessário -->
-                <div class="carousel-item ">
-                    <img src="./assets/img/hall/hall2021.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/hall/hall2021.png" class="d-block w-100" alt="Slide 2">
                 </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/hall/hall2019.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/hall/hall2018.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/hall/hall2016.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/hall/hall2014.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/hall/hall2012.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/hall/hall2010.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/hall/hall2008.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/hall/hall2006.png" class="d-block w-50" alt="Slide 1">
-                    <div class="carousel-caption">
-                        <h5>Título do Slide 1</h5>
-                        <p>Descrição breve do Slide 1.</p>
-                    </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/hall/hall2019.png" class="d-block w-100" alt="Slide 3">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Próximo</span>
             </button>
         </div>
     </section>
-    
 
     <!-- FOOTER -->
     <footer id="dynamicFooter" class="footer">
@@ -124,8 +62,7 @@
     <!-- Carregar o script personalizado -->
     <script src="./assets/script/menu.js"></script>
     <script src="./assets/script/footer.js"></script>
-    <!-- <script src="./assets/script/tabela.js"></script> -->
-    <!-- <script src="./assets/script/banners.js"></script> -->
+    <script src="./assets/script/carousel.js"></script>
 </body>
 
 </html>
