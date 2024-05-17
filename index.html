@@ -2,78 +2,85 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados da Planilha</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados da Planilha</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css" class="css">
-    <script src="https://kit.fontawesome.com/bdcd1478e3.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" class="css">
+  <script src="https://kit.fontawesome.com/bdcd1478e3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <div class="container my-5">
-        <div class="bg-light rounded titulo">
-            <h1>Dados da Planilha</h1>
-            <div class="col-sm-12 py-5 mx-auto">
-                <div id="iframeSection" class="sheets"> <!-- Definindo a altura inicial da div -->
-                    <iframe
-                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTxDlirzqW6C7Zi9vOJsa0psx8zCJNOoDCDgI9TTsi1KVaKIPArCqBgEcaRW6cxU8QoN28gTqVroCWV/pubhtml?gid=0&single=true&widget=false&headers=false&gridlines=false&chrome=false&rm=full&range=A1:AS62"
-                        frameborder="0" width="100%" height="100%" style="display: block;"></iframe>
-                </div>
-            </div>
+  <div class="container my-5">
+    <div class="bg-white rounded titulo">
+      <h1 class="titulo-pagina animate__animated animate__fadeInDown">TABELA GERAL</h1>
+      <div class="col-sm-12 py-5 mx-auto">
+        <div id="iframeSection" class="sheets"> <!-- Definindo a altura inicial da div -->
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTxDlirzqW6C7Zi9vOJsa0psx8zCJNOoDCDgI9TTsi1KVaKIPArCqBgEcaRW6cxU8QoN28gTqVroCWV/pubhtml?gid=0&single=true&widget=false&headers=false&gridlines=false&chrome=false&rm=full&range=A1:AS62"
+            frameborder="0" width="100%" height="100%" style="display: block;"></iframe>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <sectio class="cards  py-5">
+    <div class="card  bg-cards">
+      <img src="./assets/img/card-bg.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">REGRAS</h5>
+        <p class="card-text">Neste tópico encontram-se as regras do bolão, valores, critérios de desempate, pontuação
+          geral, situação da partida, prorrogação, escolha das opções de seleções, prazos, entre outros assuntos são
+          abordados no tópico.</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
+      </div>
     </div>
 
-    <sectio class="cards  py-5">
     <div class="card  bg-cards">
-        <img src="./assets/img/card-bg.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">REGRAS</h5>
-          <p class="card-text">Neste tópico encontram-se as regras do bolão, valores, critérios de desempate, pontuação geral, situação da partida, prorrogação, escolha das opções de seleções, prazos, entre outros assuntos são abordados no tópico.</p>
-          <a href="#" class="btn btn-primary">Saiba mais</a>
-        </div>
+      <img src="./assets/img/card-bg.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">HALL DA FAMA</h5>
+        <p class="card-text">Este tópico é cobiçado por muitos mas frequentados por poucos, aqui se encontram os
+          verdadeiros campeões, participantes dos bolões que ganharam algum prêmio estão carimbados no nosso Hall da
+          Fama e sempre será lembrado.</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
       </div>
+    </div>
 
-      <div class="card  bg-cards">
-        <img src="./assets/img/card-bg.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">HALL DA FAMA</h5>
-          <p class="card-text">Este tópico é cobiçado por muitos mas frequentados por poucos, aqui se encontram os verdadeiros campeões, participantes dos bolões que ganharam algum prêmio estão carimbados no nosso Hall da Fama e sempre será lembrado.</p>
-          <a href="#" class="btn btn-primary">Saiba mais</a>
-        </div>
+    <div class="card  bg-cards">
+      <img src="./assets/img/card-bg.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">COMPETIÇÕES</h5>
+        <p class="card-text">Neste tópico está registrado todos os placares dos participantes a partir do bolão de 2012,
+          então, se você participou de algum bolão fique atento que você poderá consultar seu histórico e lembrar dos
+          momentos nostálgicos.</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
       </div>
+    </div>
+  </sectio>
 
-      <div class="card  bg-cards">
-        <img src="./assets/img/card-bg.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">COMPETIÇÕES</h5>
-          <p class="card-text">Neste tópico está registrado todos os placares dos participantes a partir do bolão de 2012, então, se você participou de algum bolão fique atento que você poderá consultar seu histórico e lembrar dos momentos nostálgicos.</p>
-          <a href="#" class="btn btn-primary">Saiba mais</a>
-        </div>
-      </div>
-    </sectio>
+  <footer id="dynamicFooter" class="footer">
 
-    <footer id="dynamicFooter" class="footer">
-
-    </footer>
+  </footer>
 
 
-    <!-- Carregar o BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
+  <!-- Carregar o BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
 
-    <!-- Carregar o script personalizado -->
-    <script src="./assets/script/menu.js"></script>
-    <script src="./assets/script/footer.js"></script>
-    <script src="./assets/script/tabela.js"></script>
-    <script src="./assets/script/banners.js"></script>
+  <!-- Carregar o script personalizado -->
+  <script src="./assets/script/menu.js"></script>
+  <script src="./assets/script/footer.js"></script>
+  <script src="./assets/script/tabela.js"></script>
+  <script src="./assets/script/banners.js"></script>
 </body>
 
 </html>

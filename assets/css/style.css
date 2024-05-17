@@ -15,6 +15,12 @@
     font-family: 'Uefa Euro Book', Arial, sans-serif;
 }
 
+.titulo-pagina {
+    animation-duration: 0.5s;
+    font-family: 'Uefa Euro Bold', Arial, sans-serif;
+    text-align: center;
+}
+
 #dynamicMenu {
     background-image: url("../img/euro2024\ logo\ completo\ horizontal.svg");
     /* Caminho para a imagem */

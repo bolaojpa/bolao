@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var pages = [
         { name: "Home", link: "index.html" },
         { name: "Classificação", link: "classificacao.html" },
-        { name: "Página 2", link: "pagina2.html" },
+        { name: "Estatísticas", link: "estatisticas.html" },
         { name: "Hall da Fama", link: "halldafama.html" },
         { name: "Página 4", link: "pagina4.html" },
         { name: "Regras", link: "regras.html" }
