@@ -14,3 +14,27 @@
         max-height: 60vh; /* Altura máxima de 60% da altura da tela em telas menores */
     }
 }
+
+.carousel-control-prev span {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%444'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+    border: 1px #0000;
+}
+
+.carousel-control-next span {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%444'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 574px) {
+    .carousel-control-prev {
+        background: #d7d7d7;
+        opacity: 0.2;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    .carousel-control-next {
+        background: #d7d7d7;
+        opacity: 0.2;
+    }
+}
