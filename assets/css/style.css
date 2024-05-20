@@ -15,6 +15,18 @@
     font-family: 'Uefa Euro Book', Arial, sans-serif;
 }
 
+.nav-link {
+    color: #FFFF
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFCB00
+}
+
+.nav-link:hover {
+    color: #FFCB00;
+}
+
 .titulo-pagina {
     animation-duration: 0.5s;
     font-family: 'Uefa Euro Bold', Arial, sans-serif;
@@ -131,3 +143,9 @@
     padding: 10px;
     /* Espaçamento interno */
 }
+
+.titulo-bloco {
+    text-align: center;
+    font-weight: 600;
+}
+
