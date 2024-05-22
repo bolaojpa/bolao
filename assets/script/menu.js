@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Classificação", link: "classificacao.html" },
         { name: "Estatísticas", link: "estatisticas.html" },
         { name: "Hall da Fama", link: "halldafama.html" },
-        { name: "Página 4", link: "pagina4.html" },
+        { name: "Competição", link: "competicao.html" },
         { name: "Regras", link: "regras.html" }
     ];
 
