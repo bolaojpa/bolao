@@ -89,7 +89,7 @@
     z-index: 900;
 }
 
-.modal-dialog {
+.janela {
     max-width: 80%;
     margin: auto;
 }
@@ -107,7 +107,7 @@
 }
 
 @media (max-width: 574px) {
-    .modal-dialog {
+    .janela {
         max-width: 90%;
     }
 }

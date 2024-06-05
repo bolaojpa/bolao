@@ -12,7 +12,7 @@
     height: 106px; /* Altura fixa dos banners */
     max-width: 100%;
     overflow: hidden; /* Oculta qualquer parte da imagem que exceda o contêiner */
-    border: 1px solid #ccc; /* Adicione uma borda para visualização */
+    /* border: 1px solid #ccc;  Adicione uma borda para visualização */
     border-radius: 5px; /* Borda arredondada */
     display: flex; /* Torna o banner um flex container */
     align-items: center; /* Alinha os itens verticalmente */
