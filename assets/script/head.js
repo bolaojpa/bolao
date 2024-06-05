@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
       <link rel="stylesheet" href="./assets/css/style.css" class="css">
       <link rel="stylesheet" href="./assets/css/banners.css" class="css">
       <link rel="stylesheet" href="./assets/css/carousel.css" class="css">
+      <link rel="stylesheet" href="./assets/css/player.css" class="css">
+      <link rel="stylesheet" href="./assets/css/banners-compet.css" class="css">
       <script src="https://kit.fontawesome.com/bdcd1478e3.js" crossorigin="anonymous"></script>
     `;
   

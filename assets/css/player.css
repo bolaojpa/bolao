@@ -1,0 +1,13 @@
+.video-container {
+    width: 100%;
+    max-width: 300px; /* Largura máxima mais estreita */
+    margin: 0 auto;
+    text-align: center;
+}
+
+video {
+    width: auto;
+    height: auto;
+    max-height: 600px; /* Ajuste a altura máxima conforme necessário */
+    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
+}
