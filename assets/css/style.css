@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Uefa Euro Bold';
-    src: url('/assets/fonts/UEFAEuro-Bold/UEFAEuro-Bold.ttf') format('truetype');
+    src: url('./assets/fonts/UEFAEuro-Bold/UEFAEuro-Bold.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'Uefa Euro Book';
-    src: url('/assets/fonts/UEFAEuro-Book/UEFAEuro-Book.ttf') format('truetype');
+    src: url('./assets/fonts/UEFAEuro-Book/UEFAEuro-Book.ttf') format('truetype');
   }
 
 * {
