@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.9);
     padding-top: 60px;
     opacity: 0; /* Defina a opacidade inicial como 0 */
     transition: opacity 0.5s; /* Adicione uma transição suave para a mudança de opacidade */
