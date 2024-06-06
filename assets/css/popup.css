@@ -24,6 +24,7 @@
     max-width: 600px; /* Máximo de largura para o modal */
     position: relative;
     text-align: center; /* Centraliza o conteúdo */
+    border-radius: 20px;
 }
 
 /* O botão para fechar o modal */
