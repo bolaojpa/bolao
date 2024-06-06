@@ -1,0 +1,58 @@
+/* O Modal (background) */
+.modal-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    opacity: 0; /* Defina a opacidade inicial como 0 */
+    transition: opacity 0.5s; /* Adicione uma transição suave para a mudança de opacidade */
+}
+
+/* Modal Content */
+.modal-content-popup {
+    background-color: #fff; /* Fundo branco */
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Máximo de largura para o modal */
+    position: relative;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* O botão para fechar o modal */
+.close {
+    color: white; /* Cor do X */
+    font-size: 20px; /* Tamanho do X */
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001; /* Z-index mais alto para sobrepor a imagem */
+    background-color: red; /* Fundo vermelho */
+    border-radius: 50%; /* Forma redonda */
+    width: 30px; /* Largura do círculo */
+    height: 30px; /* Altura do círculo */
+    display: flex; /* Alinhamento flexível */
+    justify-content: center; /* Centraliza o X horizontalmente */
+    align-items: center; /* Centraliza o X verticalmente */
+}
+
+.close:hover,
+.close:focus {
+    background-color: darkred; /* Fundo vermelho escuro ao passar o mouse */
+    text-decoration: none;
+}
+
+/* Ative a exibição do modal adicionando a classe 'show' */
+.modal-popup.show {
+    display: block;
+    opacity: 1; /* Defina a opacidade para 1 para mostrar o modal */
+}
