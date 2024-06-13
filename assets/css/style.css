@@ -104,6 +104,14 @@
     .card {
         width: 16rem;
     }
+
+    #frame-tabela {
+        height: 255vh;
+    }
+    
+    .geral {
+        height: 260vh;
+    }
 /*     .sheets {
         height: 200vh;
     } */
@@ -120,6 +128,13 @@
         width: 20rem;
         display: flex;
         flex-wrap: wrap;
+    }
+    #countdown {
+        font-size: 2em !important;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -159,4 +174,27 @@
     .img-hall {
         height: 50vh;
     }
+}
+
+.hidden {
+    display: none;
+    
+}
+.visible {
+    display: block;
+}
+#countdown {
+    font-size: 5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#frame-tabela {
+    height: 170vh;
+}
+
+.geral {
+    height: 180vh;
 }
