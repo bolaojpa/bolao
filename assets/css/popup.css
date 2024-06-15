@@ -10,57 +10,62 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
     padding-top: 60px;
-    opacity: 0; /* Defina a opacidade inicial como 0 */
-    transition: opacity 0.5s; /* Adicione uma transição suave para a mudança de opacidade */
+    opacity: 0;
+    transition: opacity 0.5s;
 }
-
-/*Modal COntent Classificao */
-.classificacao {
-    height: 52vh !important;
-}
-
 
 /* Modal Content */
 .modal-content-popup {
-    background-color: #fff; /* Fundo branco */
+    background-color: #fff;
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    height: 50vh;
-    max-width: 600px; /* Máximo de largura para o modal */
+    max-width: 600px;
+    max-height: 80vh;
     position: relative;
-    text-align: center; /* Centraliza o conteúdo */
+    text-align: center;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagem dentro do modal */
+.modal-content-popup img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
 }
 
 /* O botão para fechar o modal */
 .close {
-    color: white; /* Cor do X */
-    font-size: 20px; /* Tamanho do X */
+    color: white;
+    font-size: 20px;
     font-weight: bold;
     position: absolute;
     top: 10px;
     right: 20px;
     cursor: pointer;
-    z-index: 1001; /* Z-index mais alto para sobrepor a imagem */
-    background-color: red; /* Fundo vermelho */
-    border-radius: 50%; /* Forma redonda */
-    width: 30px; /* Largura do círculo */
-    height: 30px; /* Altura do círculo */
-    display: flex; /* Alinhamento flexível */
-    justify-content: center; /* Centraliza o X horizontalmente */
-    align-items: center; /* Centraliza o X verticalmente */
+    z-index: 1001;
+    background-color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .close:hover,
 .close:focus {
-    background-color: darkred; /* Fundo vermelho escuro ao passar o mouse */
+    background-color: darkred;
     text-decoration: none;
 }
 
-/* Ative a exibição do modal adicionando a classe 'show' */
 .modal-popup.show {
     display: block;
-    opacity: 1; /* Defina a opacidade para 1 para mostrar o modal */
+    opacity: 1;
 }
