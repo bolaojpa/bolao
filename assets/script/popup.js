@@ -1,3 +1,4 @@
+
 // Funções de ajuda para cookies
 function setCookie(name, value, days) {
     let expires = "";
