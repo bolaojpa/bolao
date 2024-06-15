@@ -1,3 +1,5 @@
+// imageList.js
+
 const imageList = {
     'Ricardo': 'https://i.ibb.co/dKMj1Yt/Ricardo.jpg',
     'Zaffynth': 'https://i.ibb.co/vJJkgdG/Zaffynth.jpg',
@@ -11,3 +13,6 @@ const imageList = {
     'Daniel': 'https://i.ibb.co/T0SQvrR/Daniel.jpg',
     'Rodrigo': 'https://i.ibb.co/sH1V35V/Rodrigo.jpg'
 };
+
+// Exporta a lista para ser utilizada em outros arquivos
+export default imageList;

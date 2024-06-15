@@ -1,28 +1,44 @@
+// popup.js
 
-// Funções de ajuda para cookies
-function setCookie(name, value, days) {
-    let expires = "";
-    if (days) {
-        const date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
+const imagemPadrao = 'https://i.ibb.co/T0pRBgW/mascote-euro.jpg';
+
+// Objeto que mapeia nomes a URLs de imagens
+const imagensPorNome = {
+    'Ricardo': 'https://i.ibb.co/dKMj1Yt/Ricardo.jpg',
+    'Zaffynth': 'https://i.ibb.co/vJJkgdG/Zaffynth.jpg',
+    'Jullius': 'https://i.ibb.co/6yKV8Qh/Jullius.jpg',
+    'Leandro': 'https://i.ibb.co/k4sDbmk/Leandro.jpg',
+    'Tony': 'https://i.ibb.co/4j1szxh/Tony.jpg',
+    'Wellington': 'https://i.ibb.co/TghWXPn/Wellington.jpg',
+    'Elisson': 'https://i.ibb.co/GttLB3G/Elisson.jpg',
+    'Ranycleiton': 'https://i.ibb.co/8dj0tKy/Ranicleyton.jpg',
+    'Alan': 'https://i.ibb.co/zbd83tq/Alan.jpg',
+    'Daniel': 'https://i.ibb.co/T0SQvrR/Daniel.jpg',
+    'Rodrigo': 'https://i.ibb.co/sH1V35V/Rodrigo.jpg'
+};
+
+// Função para carregar dados da planilha
+async function loadSheetData() {
+    try {
+        const response = await fetch('https://sheets.googleapis.com/v4/spreadsheets/1d4_mkF09Db-Wa13fBbjFTja5gBmXohEWMKWVXIhROaA/values/RANKING!B4?key=AIzaSyAT7G9zCufaBkpXqSB95yXoOI0lyqg3Hyw');
+
+        if (!response.ok) {
+            throw new Error('Erro ao carregar dados');
+        }
+
+        const data = await response.json();
+        const nome = data.values[0][0];
+        const urlImagem = imagensPorNome[nome] || imagemPadrao;
+
+        if (urlImagem) {
+            document.getElementById('modalImage').src = urlImagem;
+        } else {
+            throw new Error('URL da imagem não encontrado');
+        }
+
+    } catch (error) {
+        console.error('Erro:', error);
     }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-}
-
-function getCookie(name) {
-    const nameEQ = name + "=";
-    const ca = document.cookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-    }
-    return null;
-}
-
-function eraseCookie(name) {
-    document.cookie = name + '=; Max-Age=-99999999;';
 }
 
 // Função para mostrar o modal
@@ -34,30 +50,26 @@ function showModal() {
     modal.classList.add("show"); // Adiciona a classe 'show' para exibir o modal suavemente
     closeBtn.style.display = "none"; // Ocultar o botão de fechar
 
-    // Mostrar o botão de fechar após 4 segundos
+    // Mostrar o botão de fechar após 7 segundos
     setTimeout(() => {
         closeBtn.style.display = "inline-block";
 
-        // Fechar o modal quando o usuário clicar no X
         closeBtn.onclick = function() {
             modal.style.display = "none";
-        }
+        };
 
-        // Fechar o modal quando o usuário clicar fora da área do modal, apenas após 4 segundos
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
-        }
+        };
     }, 7000);
 }
 
 // Função para iniciar o timer de navegação
 function startNavigationTimer() {
-    // Define o último tempo de atividade como o tempo atual
     setCookie("lastActivityTime", new Date().getTime(), 1);
 
-    // Adiciona eventos para detectar atividade do usuário
     window.onclick = updateLastActivity;
     window.onmousemove = updateLastActivity;
     window.onkeydown = updateLastActivity;
@@ -74,30 +86,55 @@ function checkInactivity() {
     const lastActivityTime = getCookie("lastActivityTime");
     const timeSinceLastActivity = currentTime - lastActivityTime;
 
-    // Verifica se se passaram 5 minutos desde a última atividade
     if (timeSinceLastActivity >= 5 * 60 * 1000) {
-        showModal();
+        showOnFirstVisit();
     }
 }
 
 // Função para mostrar o modal na primeira visita
-function showOnFirstVisit() {
+async function showOnFirstVisit() {
     const firstVisit = getCookie("firstVisit");
     if (!firstVisit) {
-        showModal();
-        setCookie("firstVisit", "true", 1); // Marca como visitado
+        try {
+            await loadSheetData();
+            showModal();
+            setCookie("firstVisit", "true", 1);
+        } catch (error) {
+            console.error('Erro ao buscar dados da planilha:', error);
+            showModal(); // Mostrar o modal mesmo em caso de erro
+            setCookie("firstVisit", "true", 1);
+        }
     }
 }
 
 // Função para iniciar o check de inatividade
 function startInactivityCheck() {
-    // Define o intervalo para checar inatividade
     setInterval(checkInactivity, 1000); // Checar a cada segundo
 }
 
-// Inicializa quando a página carrega
-window.onload = function() {
-    showOnFirstVisit(); // Mostrar modal na primeira visita
-    startNavigationTimer(); // Inicia o timer de navegação
-    startInactivityCheck(); // Começa a checar inatividade
+// Função para definir um cookie
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
+
+// Função para obter um cookie
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+// Inicializa a função para mostrar o modal na primeira visita
+window.onload = function() {
+    showOnFirstVisit();
+    startNavigationTimer();
+    startInactivityCheck();
+};
