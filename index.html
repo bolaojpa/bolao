@@ -77,5 +77,14 @@
     <script src="./assets/script/count.js"></script>
     <script src="./assets/script/popup.js"></script> <!-- Arquivo com funções de modal e interação com planilha -->
 
+    <script>
+        // Inicializa a função para mostrar o modal na primeira visita
+        window.onload = function() {
+            showOnFirstVisit();
+            startNavigationTimer();
+            startInactivityCheck();
+        };
+    </script>
+
 </body>
 </html>
