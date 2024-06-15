@@ -1,5 +1,3 @@
-// popup.js
-
 const imagemPadrao = 'https://i.ibb.co/T0pRBgW/mascote-euro.jpg';
 
 // Objeto que mapeia nomes a URLs de imagens
@@ -68,7 +66,7 @@ function showModal() {
 
 // Função para iniciar o timer de navegação
 function startNavigationTimer() {
-    setCookie("lastActivityTime", new Date().getTime(), 1);
+    updateLastActivity();
 
     window.onclick = updateLastActivity;
     window.onmousemove = updateLastActivity;
@@ -77,33 +75,28 @@ function startNavigationTimer() {
 
 // Atualiza o último tempo de atividade
 function updateLastActivity() {
-    setCookie("lastActivityTime", new Date().getTime(), 1);
+    setSessionCookie("lastActivityTime", new Date().getTime());
 }
 
 // Função para verificar se 5 minutos se passaram sem atividade do usuário
 function checkInactivity() {
     const currentTime = new Date().getTime();
-    const lastActivityTime = getCookie("lastActivityTime");
+    const lastActivityTime = getSessionCookie("lastActivityTime");
     const timeSinceLastActivity = currentTime - lastActivityTime;
 
     if (timeSinceLastActivity >= 5 * 60 * 1000) {
-        showOnFirstVisit();
+        showModal();
     }
 }
 
 // Função para mostrar o modal na primeira visita
 async function showOnFirstVisit() {
-    const firstVisit = getCookie("firstVisit");
-    if (!firstVisit) {
-        try {
-            await loadSheetData();
-            showModal();
-            setCookie("firstVisit", "true", 1);
-        } catch (error) {
-            console.error('Erro ao buscar dados da planilha:', error);
-            showModal(); // Mostrar o modal mesmo em caso de erro
-            setCookie("firstVisit", "true", 1);
-        }
+    try {
+        await loadSheetData();
+        showModal();
+    } catch (error) {
+        console.error('Erro ao buscar dados da planilha:', error);
+        showModal(); // Mostrar o modal mesmo em caso de erro
     }
 }
 
@@ -112,16 +105,13 @@ function startInactivityCheck() {
     setInterval(checkInactivity, 1000); // Checar a cada segundo
 }
 
-// Função para definir um cookie
-function setCookie(name, value, days) {
-    const date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + date.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+// Função para definir um cookie de sessão
+function setSessionCookie(name, value) {
+    document.cookie = name + "=" + value + "; path=/; expires=0";
 }
 
-// Função para obter um cookie
-function getCookie(name) {
+// Função para obter um cookie de sessão
+function getSessionCookie(name) {
     const nameEQ = name + "=";
     const ca = document.cookie.split(';');
     for (let i = 0; i < ca.length; i++) {
@@ -134,7 +124,10 @@ function getCookie(name) {
 
 // Inicializa a função para mostrar o modal na primeira visita
 window.onload = function() {
-    showOnFirstVisit();
+    if (!getSessionCookie("firstVisit")) {
+        setSessionCookie("firstVisit", "true");
+        showOnFirstVisit();
+    }
     startNavigationTimer();
     startInactivityCheck();
 };
