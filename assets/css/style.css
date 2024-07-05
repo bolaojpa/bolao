@@ -106,11 +106,11 @@
     }
 
     #frame-tabela {
-        height: 255vh;
+        height: 350vh;
     }
     
     .geral {
-        height: 260vh;
+        height: 370vh;
     }
 /*     .sheets {
         height: 200vh;
@@ -192,9 +192,9 @@
 }
 
 #frame-tabela {
-    height: 320vh;
+    height: 350vh;
 }
 
 .geral {
-    height: 340vh;
+    height: 370vh;
 }
