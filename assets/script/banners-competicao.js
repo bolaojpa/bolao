@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             id: "bannerModal7",
             title: "Banner 1",
-            iframeSrc: ""
+            iframeSrc: "https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vTxDlirzqW6C7Zi9vOJsa0psx8zCJNOoDCDgI9TTsi1KVaKIPArCqBgEcaRW6cxU8QoN28gTqVroCWV/pubhtml?gid=0&single=true&widget=false&headers=false&gridlines=false&chrome=false"
         },
         {
             id: "bannerModal8",

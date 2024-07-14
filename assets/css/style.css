@@ -176,25 +176,25 @@
     }
 }
 
-.hidden {
-    display: none;
-    
-}
+/* .hidden {
+    display: none;  
+} */
+
 .visible {
     display: block;
 }
-#countdown {
+/* #countdown {
     font-size: 5em;
     font-weight: bold;
     display: flex;
     justify-content: center;
     text-align: center;
-}
+} */
 
-#frame-tabela {
+/* #frame-tabela {
     height: 370vh;
-}
+} */
 
 .geral {
-    height: 400vh;
+    height: 70vh;
 }
