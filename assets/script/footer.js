@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var footerData = {
-        copyright: "Copyright © 2024 - Bolaojpa"
+        copyright: "Copyright © 2025 - Bolaojpa"
     };
 
     generateDynamicFooter(footerData);

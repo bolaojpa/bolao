@@ -4,7 +4,7 @@ const imagemPadrao = 'https://i.ibb.co/T0pRBgW/mascote-euro.jpg';
 const imagensPorNome = {
     'Ricardo': 'https://i.ibb.co/dKMj1Yt/Ricardo.jpg',
     'Zaffynth': 'https://i.ibb.co/vJJkgdG/Zaffynth.jpg',
-    'Jullius': 'https://i.ibb.co/kHrB5nC/jullius-campeao.jpg',
+    'Jullius': 'https://i.ibb.co/F4rjJBpw/EM-BREVE.png',
     'Leandro': 'https://i.ibb.co/k4sDbmk/Leandro.jpg',
     'Tony': 'https://i.ibb.co/4j1szxh/Tony.jpg',
     'Wellington': 'https://i.ibb.co/TghWXPn/Wellington.jpg',

@@ -15,6 +15,11 @@
     font-family: 'Uefa Euro Book', Arial, sans-serif;
 }
 
+body {
+    background-color: #111111;;
+    color: #ffffff;
+}
+
 .nav-link {
     color: #FFFF;
 }
@@ -34,7 +39,7 @@
 }
 
 #dynamicMenu {
-    background-image: url("../img/euro2024\ logo\ completo\ horizontal.svg");
+    background-image: url("https://i.ibb.co/LXtfFfxy/World-Cup-Club-HORIZONTAL.png");
     /* Caminho para a imagem */
     background-size: auto 60px;
     /* Ajusta o tamanho da imagem */
@@ -55,7 +60,7 @@
 }
 
 .bg-cards {
-    background: #00ba5d;
+    background: #000000;
     color: white;
 }
 
@@ -66,11 +71,11 @@
 
 
 .bg-primary {
-    background-color: #143cdb !important;
+    background-color: #000000!important;
 }
 
 .btn-primary {
-    background: #143cdb !important;
+    background: #F1BE48 !important;
     color: white;
     border: 0;
 }
@@ -141,7 +146,7 @@
 
 /* Estilo para o footer */
 .footer {
-    background-color: #143cdb;
+    background-color: #000000;
     /* Cor de fundo */
     height: 70px;
     display: flex;
