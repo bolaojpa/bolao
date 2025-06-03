@@ -75,8 +75,8 @@ body {
 }
 
 .btn-primary {
-    background: #F1BE48 !important;
-    color: white;
+    background: #f4d771 !important;
+    color: #000000;
     border: 0;
 }
 
@@ -97,6 +97,12 @@ body {
     border: 0px;
     width: 10rem;
     text-align: justify;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (min-width: 1260px) {
