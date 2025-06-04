@@ -16,7 +16,7 @@ const nameToImageUrl = {
 // Função para carregar o nome da célula B4 da aba RANKING da planilha View
 async function loadCellB4Value() {
     const sheetId = 'https://docs.google.com/spreadsheets/d/1d4_mkF09Db-Wa13fBbjFTja5gBmXohEWMKWVXIhROaA'; // Substitua com o ID da sua planilha
-    const range = 'RANKING!B4';
+    const range = 'Ranking!B4';
     const apiKey = 'AIzaSyAT7G9zCufaBkpXqSB95yXoOI0lyqg3Hyw'; // Substitua com sua chave de API do Google
 
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;

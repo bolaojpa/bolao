@@ -1,4 +1,4 @@
-const imagemPadrao = 'https://i.ibb.co/T0pRBgW/mascote-euro.jpg';
+const imagemPadrao = 'https://i.ibb.co/F4rjJBpw/EM-BREVE.png';
 
 // Objeto que mapeia nomes a URLs de imagens
 const imagensPorNome = {
@@ -18,7 +18,8 @@ const imagensPorNome = {
 // Função para carregar dados da planilha
 async function loadSheetData() {
     try {
-        const response = await fetch('https://sheets.googleapis.com/v4/spreadsheets/1d4_mkF09Db-Wa13fBbjFTja5gBmXohEWMKWVXIhROaA/values/RANKING!B4?key=AIzaSyAT7G9zCufaBkpXqSB95yXoOI0lyqg3Hyw');
+        /* const response = await fetch('https://sheets.googleapis.com/v4/spreadsheets/1d4_mkF09Db-Wa13fBbjFTja5gBmXohEWMKWVXIhROaA/values/RANKING!B4?key=AIzaSyAT7G9zCufaBkpXqSB95yXoOI0lyqg3Hyw'); */
+        const response = await fetch('https://sheets.googleapis.com/v4/spreadsheets/1C5pLBsdyP7i4sj0BFY9Cr4SvzVA4WcAHk68PFwviGRc/values/Ranking!B4?key=AIzaSyAT7G9zCufaBkpXqSB95yXoOI0lyqg3Hyw');
 
         if (!response.ok) {
             throw new Error('Erro ao carregar dados');
@@ -61,7 +62,7 @@ function showModal() {
                 modal.style.display = "none";
             }
         };
-    }, 7000);
+    }, 5000);
 }
 
 // Função para iniciar o timer de navegação
