@@ -46,6 +46,10 @@
     animation-delay: 1.2s;
 }
 
+.banner:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
 .banner img {
     position: absolute; /* Para sobrepor a logo */
     top: 50%; /* Alinha a logo verticalmente */
