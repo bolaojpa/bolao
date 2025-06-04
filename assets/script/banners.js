@@ -54,6 +54,11 @@ document.addEventListener("DOMContentLoaded", function() {
             id: "bannerModal6",
             title: "Banner 6",
             iframeSrc: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQr9Ngcfb92jdZ3a8TsolGtlRZgNhGq0FxuxAxN0GjdYLUOapHffw9jx0f2LzSxo-adL2thyLKJ0PMf/pubhtml?gid=536669253&single=true&widget=false&headers=false&gridlines=false&chrome=false"
+        },
+        {
+            id: "bannerModal7",
+            title: "Banner 7",
+            iframeSrc: ""
         }
     ];
 
