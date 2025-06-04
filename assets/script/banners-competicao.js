@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             id: "bannerModal13",
             title: "Banner 7",
-            iframeSrc: ""
+            iframeSrc: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSxnf8mOgfigJh2vfkxEkyC0sHdbQJwJ613CGvqBf-xy-dMNdnR8OxsIp1GDc3lXGewvLqAM6szpheg/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false&gridlines=false&pli=1"
         }
     ];
 

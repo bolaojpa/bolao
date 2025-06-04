@@ -38,6 +38,15 @@ body {
     text-align: center;
 }
 
+.rounder {
+    display: flex;
+}
+
+.conteudo-tabela {
+    display: flex;
+    flex-direction: column;
+}
+
 #dynamicMenu {
     background-image: url("https://i.ibb.co/LXtfFfxy/World-Cup-Club-HORIZONTAL.png");
     /* Caminho para a imagem */
@@ -192,7 +201,7 @@ body {
 } */
 
 .visible {
-    display: block;
+    display: none;
 }
 /* #countdown {
     font-size: 5em;
@@ -206,6 +215,6 @@ body {
     height: 370vh;
 } */
 
-.geral {
+/* .geral {
     height: 20vh;
-}
+} */
