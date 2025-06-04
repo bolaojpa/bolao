@@ -130,7 +130,7 @@ body {
     }
     
     .geral {
-        height: 370vh;
+        /* height: 370vh; */
     }
 /*     .sheets {
         height: 200vh;
@@ -192,7 +192,7 @@ body {
 
 @media (max-width: 574px) {
     .img-hall {
-        height: 50vh;
+       /*  height: 50vh; */
     }
 }
 
