@@ -2,17 +2,17 @@ const imagemPadrao = 'https://i.ibb.co/F4rjJBpw/EM-BREVE.png';
 
 // Objeto que mapeia nomes a URLs de imagens
 const imagensPorNome = {
-    'Ricardo': 'https://i.ibb.co/dKMj1Yt/Ricardo.jpg',
-    'Zaffynth': 'https://i.ibb.co/vJJkgdG/Zaffynth.jpg',
-    'Jullius': 'https://i.ibb.co/F4rjJBpw/EM-BREVE.png',
+    'RICARDO': 'https://i.ibb.co/dKMj1Yt/Ricardo.jpg',
+    'ZAFFYNTH': 'https://i.ibb.co/vJJkgdG/Zaffynth.jpg',
+    'JULLIUS': 'https://i.ibb.co/N6WqwTNZ/JULLIUS.jpg',
     'Leandro': 'https://i.ibb.co/k4sDbmk/Leandro.jpg',
-    'Tony': 'https://i.ibb.co/4j1szxh/Tony.jpg',
-    'Wellington': 'https://i.ibb.co/TghWXPn/Wellington.jpg',
-    'Elisson': 'https://i.ibb.co/GttLB3G/Elisson.jpg',
+    'TONY': 'https://i.ibb.co/4j1szxh/Tony.jpg',
+    'WELLINGTON': 'https://i.ibb.co/TghWXPn/Wellington.jpg',
+    'ELISSON': 'https://i.ibb.co/GttLB3G/Elisson.jpg',
     'Ranycleiton': 'https://i.ibb.co/8dj0tKy/Ranicleyton.jpg',
-    'Alan': 'https://i.ibb.co/zbd83tq/Alan.jpg',
-    'Daniel': 'https://i.ibb.co/T0SQvrR/Daniel.jpg',
-    'Rodrigo': 'https://i.ibb.co/sH1V35V/Rodrigo.jpg'
+    'ALAN': 'https://i.ibb.co/zbd83tq/Alan.jpg',
+    'DANIEL': 'https://i.ibb.co/zHJW7CXs/DANIEL.jpg',
+    'RODRIGO': 'https://i.ibb.co/sH1V35V/Rodrigo.jpg'
 };
 
 // Função para carregar dados da planilha
