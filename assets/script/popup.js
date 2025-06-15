@@ -2,13 +2,13 @@ const imagemPadrao = 'https://i.ibb.co/F4rjJBpw/EM-BREVE.png';
 
 // Objeto que mapeia nomes a URLs de imagens
 const imagensPorNome = {
-    'RICARDO': 'https://i.ibb.co/dKMj1Yt/Ricardo.jpg',
-    'ZAFFYNTH': 'https://i.ibb.co/vJJkgdG/Zaffynth.jpg',
+    'RICARDO': 'https://i.ibb.co/v6mmXLHy/RICARDO.jpg',
+    'ZAFFYNTH': 'https://i.ibb.co/yndVPV9j/ZAFFYNTH.jpg',
     'JULLIUS': 'https://i.ibb.co/N6WqwTNZ/JULLIUS.jpg',
     'Leandro': 'https://i.ibb.co/k4sDbmk/Leandro.jpg',
     'TONY': 'https://i.ibb.co/VWsm5TjD/TONY.jpg',
-    'WELLINGTON': 'https://i.ibb.co/TghWXPn/Wellington.jpg',
-    'ELISSON': 'https://i.ibb.co/GttLB3G/Elisson.jpg',
+    'WELLINGTON': 'https://i.ibb.co/r2mvFtR1/WELLINGTON.jpg',
+    'ELISSON': 'https://i.ibb.co/dsGQM0Sw/ELISSON.jpg',
     'Ranycleiton': 'https://i.ibb.co/8dj0tKy/Ranicleyton.jpg',
     'ALAN': 'https://i.ibb.co/zHP3Kgr6/ALAN.jpg',
     'DANIEL': 'https://i.ibb.co/zHJW7CXs/DANIEL.jpg',
