@@ -6,13 +6,13 @@ const imagensPorNome = {
     'ZAFFYNTH': 'https://i.ibb.co/vJJkgdG/Zaffynth.jpg',
     'JULLIUS': 'https://i.ibb.co/N6WqwTNZ/JULLIUS.jpg',
     'Leandro': 'https://i.ibb.co/k4sDbmk/Leandro.jpg',
-    'TONY': 'https://i.ibb.co/4j1szxh/Tony.jpg',
+    'TONY': 'https://i.ibb.co/VWsm5TjD/TONY.jpg',
     'WELLINGTON': 'https://i.ibb.co/TghWXPn/Wellington.jpg',
     'ELISSON': 'https://i.ibb.co/GttLB3G/Elisson.jpg',
     'Ranycleiton': 'https://i.ibb.co/8dj0tKy/Ranicleyton.jpg',
-    'ALAN': 'https://i.ibb.co/zbd83tq/Alan.jpg',
+    'ALAN': 'https://i.ibb.co/zHP3Kgr6/ALAN.jpg',
     'DANIEL': 'https://i.ibb.co/zHJW7CXs/DANIEL.jpg',
-    'RODRIGO': 'https://i.ibb.co/sH1V35V/Rodrigo.jpg'
+    'RODRIGO': 'https://i.ibb.co/M5ZTcWbd/RODRIGO.jpg'
 };
 
 // Função para carregar dados da planilha
