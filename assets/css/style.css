@@ -187,12 +187,12 @@ body {
 .img-hall {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 108vh;
 }
 
 @media (max-width: 574px) {
     .img-hall {
-        height: 85vh;
+        height: 90vh;
     }
 }
 
